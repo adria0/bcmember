@@ -1,0 +1,126 @@
+body {
+	background-color: #FFCD00;
+}
+
+a {
+	color: #000;
+}
+
+#header {
+	margin-top: 20px;
+}
+
+#footer {
+	margin-top: 20px;
+	font-size: 10px
+}
+
+#backupdiv {
+	border-style: dashed;
+	margin: 10px;
+	padding: 10px;
+}
+
+.row {
+	margin-top: 10px;
+
+}
+
+.button.button-primary,
+button.button-primary,
+input[type="submit"].button-primary,
+input[type="reset"].button-primary,
+input[type="button"].button-primary { 
+
+	background-color: #222;
+	border-color: #222;
+
+}
+
+.button.button-primary:hover,
+button.button-primary:hover,
+input[type="submit"].button-primary:hover,
+input[type="reset"].button-primary:hover,
+input[type="button"].button-primary:hover,
+.button.button-primary:focus,
+button.button-primary:focus,
+input[type="submit"].button-primary:focus,
+input[type="reset"].button-primary:focus,
+input[type="button"].button-primary:focus {
+  color: #FFF;
+  background-color: #000;
+  border-color: #000;
+}
+
+label {
+	margin-top: 10px;
+	margin-bottom: 0px;
+	font-size: 1.2em;
+}
+
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="text"],
+input[type="tel"],
+input[type="url"],
+input[type="password"], textarea, select {
+	background-color : #FFCD00;
+	border-bottom-color : #000;
+	border-bottom-width: 1px;
+	border-top-width: 0px;
+	border-left-width: 0px;
+	border-right-width: 0px;
+	border-radius: 0px;
+	padding: 0px 0px;
+	font-size: 1.5em;
+}
+
+input[type="email"]:hover,
+input[type="number"]:hover,
+input[type="search"]:hover,
+input[type="text"]:hover,
+input[type="tel"]:hover,
+input[type="url"]:hover,
+input[type="password"]:hover, textarea:hover, select:hover {
+	background-color : #FFCD00;
+	border-bottom-color : #000;
+	border-bottom-width: 2px;
+	border-top-width: 0px;
+	border-left-width: 0px;
+	border-right-width: 0px;
+	border-radius: 0px;
+	padding: 0px 0px;
+	font-size: 1.5em;
+}
+
+input[type="email"]:focus,
+input[type="number"]:focus,
+input[type="search"]:focus,
+input[type="text"]:focus,
+input[type="tel"]:focus,
+input[type="url"]:focus,
+input[type="password"]:focus, textarea:focus, select:focus {
+	background-color : #FFCD00;
+	border-bottom-color : #000;
+	border-bottom-width: 2px;
+	border-top-width: 0px;
+	border-left-width: 0px;
+	border-right-width: 0px;
+	border-radius: 0px;
+	padding: 0px 0px;
+	font-size: 1.5em;
+}
+
+.centered {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+  z-index: 10;
+}
+
+.hide {
+	display : none;
+}

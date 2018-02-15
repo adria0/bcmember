@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+   <head>
+	   <meta charset="utf-8">
+	   <title>Registre Blockchain Catalunya</title>
+	   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	   <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+
+       <script src='https://www.google.com/recaptcha/api.js'></script>
+   </head>
+   <body style="display:none">
+
+	  <div id="spinner" class="centered hide">
+	  	<div class="la-ball-scale-pulse la-3x">
+	  		<div></div>
+	  		<div></div>
+	  	</div>
+	  </div>
+
+      <div class="container">
+
+        <!-- header ==============================  -->
+        <div id="header" class="row">
+           <div class="twelf columns">
+           	   <img src="img/logotip.png">
+           </div>
+        </div>
+
+        <!-- sections ==============================  -->
+
+      	 <div class="section section-registered hide">      	 	
+	        <div class="row">
+	           <div class="twelf columns">
+	               <h2>Area privada</h2>
+	           </div>
+	        </div>
+	        <div class="row">
+	           <div class="twelf columns">
+	           	  <b><span id=emailreg></b>
+	           	  <span id=addressreg></span>
+	           	  <input class="button" type="button" value="Les vostes dades" id="ui_registered_userinfo"><br>
+  		          <input class="button" type="button" value="Consulteu tokens" id="ui_registered_viewtokens"><br>           	  
+	           </div>
+	        </div>
+	        <div class="row hide" id="backupdiv">
+	           <div class="twelf columns">
+	           	  Atenció! Cal que feu una copia de seguretat de les claus. Feu click al botó per descarregar l'arxiu de copia de seguretat. Deseu aquest arxiu a un lloc segur.<br><br>
+	              <input class="button-primary" type="button" value="Descarregar copia seguretat" id="ui_backup_backup">
+	           </div>
+	        </div>	        
+      	 </div>
+
+      	 <div class="section section-main hide">      	 	
+	        <div class="row">
+	           <div class="twelf columns">
+	               <h2>Benvingut</h2>
+	           	   <div>No hem detectat cap identitat instal·lada, que voleu fer?</div>
+	           </div>
+	        </div>
+	        <div class="row">
+	           <div class="twelf columns">
+	              <input class="button-primary" type="button" value="Crear nova" id="ui_create_show">
+	              <input class="button-primary" type="button" value="Recuperar" id="ui_restore_show">
+	           </div>
+	        </div>	        
+      	 </div>
+
+      	 <div class="section section-auth hide">      	 	
+	        <div class="row">
+	           <div class="twelf columns">
+	               <h2>Accedir</h2>
+	           </div>
+	        </div>
+	        <div class="row">
+	           <div class="ten columns">
+	              <label for="restorepasswd">Contrassenya</label>
+	              <input class="u-full-width" type="password" id="authpasswd">
+	           </div>
+	       </div>
+	        <div class="row">
+	           <div class="twelf columns">
+	              <input class="button-primary" type="button" value="Accedir >" id="ui_auth_auth">
+	           </div>
+	        </div>	        
+      	 </div>
+
+      	 <div class="section section-restore hide">      	 	
+	        <div class="row">
+	           <div class="twelf columns">
+	               <h2>Restaurar identitat</h2>
+	           </div>
+	        </div>
+	        <div class="row">
+	           <div class="twelf columns">
+	              <label for="restorefile">Arxiu de claus</label>
+	              <input class="u-full-width" type="file" id="restorefile">
+	           </div>
+	       </div>
+	        <div class="row">
+	           <div class="twelf columns">
+	              <label for="restorepasswd">Contrassenya</label>
+	              <input class="u-full-width" type="password" id="restorepasswd">
+	           </div>
+	       </div>
+	        <div class="row">
+	           <div class="twelf columns">
+	           	  <input class="button-primary" type="button" value="&lt;" id="ui_restore_back">
+	              <input class="button-primary" type="button" value="Recuperar >" id="ui_restore_restore">
+	           </div>
+	        </div>	        
+      	 </div>
+         
+         <div class="section section-create hide" >
+		     <form>
+		        <div class="row">
+		           <div class="twelf columns">
+		               <h2>Formulari de registre</h2>
+    		           <div>Si us plau, introduiu les vostres dades, es generara una adreca del blockhain ethereum que us permetrà participar en les concursos i votacions de l'associacio, i cal que la protegiu en una contrassenya.</div>
+		           </div>
+		        </div>
+		        <div class="row">
+		           <div class="twelf columns">
+		              <label for="firstname">Nom</label>
+		              <input class="u-full-width" type="text" id="firstname" value="adria">
+		           </div>
+		        </div>
+		        <div class="row">
+		           <div class="twelf columns">
+		              <label for="secondname">Cognoms</label>
+		              <input class="u-full-width" type="text" id="secondname" value="massanet">
+		           </div>
+		       </div>
+		        <div class="row">
+		           <div class="twelf columns">
+		              <label for="email">Email</label>
+		              <input class="u-full-width" type="email" id="email" value="adria@codecontext.io">
+		           </div>
+		        </div>
+		        <div class="row">
+		           <div class="twelf columns">
+		              <label for="mode">Visibilitat</label>
+					  <select class="u-full-width"  id="mode">
+						 <option value="volvo">Public</option>
+						 <option value="volvo">Només socis entitat</option>
+						 <option value="saab">Privat</option>
+					   </select>
+		           </div>
+		        </div>
+		        <div class="row">
+		           <div class="twelf columns">
+		              <label for="interest">Per què t'interessa Blockchain Catalunya? En quin grup de treball penses que vols participar?</label>
+					  <textarea class="u-full-width" placeholder="" id="interest"></textarea>             
+		           </div>
+		        </div>
+
+		        <div class="row">
+		           <div class="twelf columns">
+		              <label for="passwd1">Contrassenya</label>
+		              <input class="u-full-width" type="password" id="passwd1" value="111111">
+		           </div>
+		       </div>
+		        <div class="row">
+		           <div class="twelf columns">
+		              <label for="passwd2">Confirmeu contrassenya</label>
+		              <input class="u-full-width" type="password" id="passwd2" value="111111">
+		           </div>
+		       </div>
+		        <div class="row">
+		           <div class="twelf columns">
+					<div class="g-recaptcha" data-sitekey="6LcMHDYUAAAAAMoynz5EUzERHShUW2JhnV4eM_U0"></div>		        	</div>
+		        </div>
+		        <div class="row">
+		           <div class="twelf columns">
+			          <br><br>
+  		              <input class="button-primary" type="button" value="&lt;" id="ui_create_back">
+		              <input class="button-primary" type="button" value="Registrar identitat >" id="ui_create_create">
+		           </div>
+		        </div>
+		     </form>
+	      </div>
+
+	      <!-- footer ==============================  -->
+
+          <div class="row">
+             <div class="twelf columns">
+               <span id="footer"></span>
+            </div>
+          </div>
+
+      </div>
+   </body>
+</html>

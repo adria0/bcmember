@@ -1,0 +1,23 @@
+WebServer :
+  WwwRoot : where the web/dist is , [e.g /Users/hoho/bcregister/web/dist/]
+  Prefix : the url of the server, [e.g. https://localhost:8443]
+  Bind : ip and port for binding server, [e.g. "0.0.0.0:8443"]
+  CertFile : TLS certificate file. [e.g. deploy/config/server.crt
+  KeyFile : TLS certificate key file [e.g deploy/config/server.key
+DataFolder : where the data is stored [e.g. deploy/data]
+ServerSecret : a random 128-bit-entropy length string [e.g. D354151CE23AF56154AE7BB313683]
+SmtpClient :
+  From : the sender of the emails [e.g. noreply@blockchaincatalunya.org]
+  Domain : the stmp domain [e.g. authsmtp.blockchaincatalunya.org]
+  User : the authorized STMP user [e.g. noreply@blockchaincatalunya.org]
+  Password : the authorized SMTP user password
+  Server : the SMTP server [e.g. authsmtp.blockchaincatalunya.org:25]
+Recaptcha :
+  Code : the recaptcha code [e.g. 6LcMHDYUAAAAAMoynz5EUzERHShUW2JhnV4eM_U0 ]
+  Key : the key for the rcaptcha
+Web3Proxy :
+  RpcServerUrl : the url of web3 provider [e.g. http://localhost:8545]
+  Trace : true if we want to debug web3 calls
+Smartcontracts:
+  AssetsAddress : the address of the Assets contract [e.g. 0xfc8ad0fbac61cda4cccc15a9cc41729b3fe3f2fe]
+  
