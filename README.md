@@ -1,4 +1,4 @@
-# bcregister
+# bcmember
 
 This registry system for the Blockchain Catalunya association (https://www.blockchaincatalunya.org)
 
