@@ -26,34 +26,34 @@ NOTE: This is not a decentralized token, this means that tokens can be created a
 
 the API:
 
-	- `mint(address _owner, uint16 _class, bool _transferable, uint64 _caducity, string _description)`
-		- `_owner` of the asset
-		- `_class` of asset (id card, a specific training, etc...)
-		- `_transferable` if the owner can transfer the asset to other member or not
-		- `_caducity` of the asset
-		- `_description` (short) of the asset
+- `mint(address _owner, uint16 _class, bool _transferable, uint64 _caducity, string _description)`
+  - `_owner` of the asset
+  - `_class` of asset (id card, a specific training, etc...)
+  - `_transferable` if the owner can transfer the asset to other member or not
+  - `_caducity` of the asset
+  - `_description` (short) of the asset
 
-	- `burn(uint128 _serial)`
-		- `_serial` to be burnt
-    
-    - `transfer(uint128 _serial, address _to, bool _notify)`
-    	- `_serial` of asset being transferred
-    	- `_to` the recipient
-    	- `_notify` execute callback `onAssetsFallback` on the recipient address
+- `burn(uint128 _serial)`
+  - `_serial` to be burnt
 
-    - `transferOffchain(uint128 _serial, address _to, uint64 _nonce, uint8 _v, bytes32 _r, bytes32 _s)`
-    	- the same of `transfer` but with an offline generated signature see tests for an example. You need to use an incremental nonce here.
+- `transfer(uint128 _serial, address _to, bool _notify)`
+  - `_serial` of asset being transferred
+  - `_to` the recipient
+  - `_notify` execute callback `onAssetsFallback` on the recipient address
 
-    - `setCustomAttr1(uint128 _serial, bytes32 _value)`
-    	- the owner of the asset can set an field in their assets with some value
-    	- `_serial` of the asset
-    	- `_value` to be set
+- `transferOffchain(uint128 _serial, address _to, uint64 _nonce, uint8 _v, bytes32 _r, bytes32 _s)`
+  - the same of `transfer` but with an offline generated signature see tests for an example. You need to use an incremental nonce here.
 
-    - `setCustomAttr2(uint128 _serial, bytes32 _value)`
-    	- the owner of the contract can set an field in their assets with some value. this is usefull, for instance, to set a SWARM/IPFS hash of a better representation of the asset.
-    	- `_serial` of the asset
-    	- `_value` to be set
-    
+- `setCustomAttr1(uint128 _serial, bytes32 _value)`
+  - the owner of the asset can set an field in their assets with some value
+  - `_serial` of the asset
+  - `_value` to be set
+
+- `setCustomAttr2(uint128 _serial, bytes32 _value)`
+  - the owner of the contract can set an field in their assets with some value. this is usefull, for instance, to set a SWARM/IPFS hash of a better representation of the asset.
+  - `_serial` of the asset
+  - `_value` to be set
+
 ### The web application
 
 A friend helped me to write a decent and modern-looking web application, but ok, I am not a web developer, I am a security guy, so expect rare things here.
